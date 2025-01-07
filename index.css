@@ -133,16 +133,15 @@
 
 section {
   display: block;
-  width: 100%; /* Gør section-bredden 100% af skærmen */
+  width: 100%;
 }
 
 h1 {
-  display: block; /* Skift fra grid til block for korrekt visning */
+  display: block;
   font-family: "Lalezar", serif;
   font-size: 140px;
   color: rgb(246, 228, 178);
   line-height: 1em;
-  white-space: nowrap; /* Sørger for at teksten ikke brydes til flere linjer */
-  text-align: center; /* Centrer teksten */
-  overflow: hidden; /* Forhindrer tekst i at flyde udenfor */
+  white-space: nowrap;
+  text-align: center;
 }
