@@ -1,0 +1,148 @@
+@media (width < 768px) {
+  html {
+    font-family: "Lalezar", serif;
+    font-style: normal;
+    font-size: 20px;
+  }
+  p {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  body {
+    margin: 0;
+    background-image: url(../img/IMG_1145.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  img {
+    width: 100vw;
+    height: auto;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .logo {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+  }
+
+  .headermenu {
+    display: grid;
+
+    grid-column: 2;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 50px;
+    margin-right: 40px;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(246, 228, 178);
+  }
+}
+
+@media (width > 768px) {
+  html {
+    font-family: "Lalezar", serif;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .abyssinica-sil-regular p {
+    font-family: "Abyssinica SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+    background-image: url(../img/IMG_1145.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  p {
+    font-family: "Courier New", Courier, monospace;
+  }
+  img {
+    width: 100vw;
+    /* height: 100vh;
+    object-fit: cover; */
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 40px 200px 200px; */
+  }
+
+  .logo {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    width: 10vw;
+    margin: 5px;
+  }
+
+  .headermenu {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 160px;
+    margin-right: 40px;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(246, 228, 178);
+  }
+  nav ul li a:hover {
+    transform: scale(1.1);
+  }
+}
+
+section {
+  display: block;
+  width: 100%; /* Gør section-bredden 100% af skærmen */
+}
+
+h1 {
+  display: block; /* Skift fra grid til block for korrekt visning */
+  font-family: "Lalezar", serif;
+  font-size: 140px;
+  color: rgb(246, 228, 178);
+  line-height: 1em;
+  white-space: nowrap; /* Sørger for at teksten ikke brydes til flere linjer */
+  text-align: center; /* Centrer teksten */
+  overflow: hidden; /* Forhindrer tekst i at flyde udenfor */
+}

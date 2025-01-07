@@ -1,0 +1,114 @@
+html {
+  font-family: "Lalezar", serif;
+  font-style: normal;
+  font-size: 20px;
+}
+p {
+  font-family: "Abyssinica SIL", serif;
+  color: white;
+  max-width: 60ch;
+}
+body {
+  background-color: rgb(13, 69, 23);
+  margin: 0;
+}
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-rows: 40px 200px 200px; */
+}
+.logo {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  width: 10vw;
+  margin: 5px;
+}
+.headermenu {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  gap: 160px;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: rgb(246, 228, 178);
+}
+nav ul li a:hover {
+  transform: scale(1.1);
+}
+
+.overskrift {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.overskrift h1 {
+  color: white;
+  font-size: 100px;
+}
+
+.overskrift p {
+  color: white;
+  font-size: 40px;
+  margin-top: -80px;
+  font-family: "Lalezar", serif;
+}
+
+.line {
+  height: 0.8px;
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_col img {
+  width: 40vw;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+}
+
+.flex_col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex_col1 h2 {
+  font-family: "Lalezar", serif;
+  color: white;
+  font-size: 80px;
+}
+
+p a {
+  color: white;
+  font-size: 1.5vw;
+}

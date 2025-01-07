@@ -1,0 +1,206 @@
+html {
+  font-family: "Lalezar", serif;
+  font-style: normal;
+  font-size: 20px;
+}
+
+body {
+  background-color: rgb(13, 69, 23);
+  margin: 0;
+}
+p {
+  color: white;
+  font-size: 20px;
+  font-family: "Abyssinica SIL", serif;
+}
+
+h2 {
+  font-size: 50px;
+  color: white;
+}
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-rows: 40px 200px 200px; */
+}
+.logo {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  width: fit-content;
+  margin: 5px;
+}
+.headermenu {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  gap: 160px;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li a {
+  text-decoration: none;
+
+  text-transform: uppercase;
+  font-size: 1em;
+  color: rgb(246, 228, 178);
+}
+nav ul li a:hover {
+  transform: scale(1.1);
+}
+
+.overskrift2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.line {
+  height: 0.8px;
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+}
+
+.grid_1-1 img {
+  width: 40vw;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.grid_1-1 p {
+  text-align: left;
+  justify-items: center;
+  align-items: center;
+  max-width: 60ch;
+  font-size: 20px;
+  font-family: "Abyssinica SIL", serif;
+}
+
+.grid_1-1 ul li {
+  color: white;
+  font-family: "Abyssinica SIL", serif;
+}
+
+.grid_1-1v2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: left;
+  justify-items: center;
+}
+
+.grid_1-1v2 img {
+  width: 40vw;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.grid_1-1v2 ul li {
+  color: white;
+  font-family: "Abyssinica SIL", serif;
+}
+
+@media (width < 768px) {
+  html {
+    font-family: "Lalezar", serif;
+    font-style: normal;
+    font-size: 20px;
+  }
+  body {
+    background-color: rgb(13, 69, 23);
+    color: white;
+  }
+
+  .line {
+    height: 0.8px;
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-family: "Abyssinica SIL", serif;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .headermenu {
+    display: grid;
+
+    grid-column: 2;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 50px;
+    margin-right: 40px;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(246, 228, 178);
+  }
+
+  .overskrift2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grid_1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid_1-1 img {
+    width: 90vw;
+    height: 70vw;
+    margin-left: 0px;
+  }
+
+  .grid_1-1v2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid_1-1v2 img {
+    width: 90vw;
+    height: 70vw;
+  }
+}
